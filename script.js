@@ -56,11 +56,13 @@ function handleSelection(index, element) {
 const loadQuestion = () => {
     const qData = questions[currentQuestion];
     const container = document.getElementById("quiz-container");
+    const totalQuestions = questions.length;
     
     // Mostra a pergunta com suavidade
     container.classList.remove("fade-out");
     
     document.getElementById("current-idx").innerText = currentQuestion + 1;
+    document.getElementById("totalQuestions").innerText = totalQuestions;
     document.getElementById("question-text").innerText = qData.q;
     
     const optionsContainer = document.getElementById("options-container");
