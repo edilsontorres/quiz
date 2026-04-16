@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz, festas Judaicas!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgContainer">
+            <img src="/img/1_20260416_113154_0000(Editado).png" />
+        </div>
+
+        <div id="quiz-container">
+            <div class="progress">Questão <span id="current-idx"></span> de <span id="totalQuestions"></div>
+            <h2 id="question-text">Carregando pergunta...</h2>
+            <div id="options-container" class="options">
+            </div>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h1 id="result-title"></h1>
+            <p id="result-score"></p>
+            <div id="review-list"></div>
+            <button onclick="location.reload()" style="margin-top: 20px; width: 100%;">Refazer Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+* { box-sizing: border-box; font-family: sans-serif; }
+body { 
+    background-color: #f0f2f5; 
+    display: flex; justify-content: center; align-items: center; 
+    height: 100vh; margin: 0; 
+}
+.container { 
+    width: 90%; max-width: 400px; 
+    background: white; padding: 20px; 
+    border-radius: 15px; shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+.progress { font-size: 0.8rem; color: #666; margin-bottom: 10px; }
+.options { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+button { 
+    padding: 15px; border: 1px solid #ddd; border-radius: 8px;
+    background: #fff; cursor: pointer; font-size: 1rem; transition: 0.2s;
+}
+button:active { background: #e0e0e0; }
+.hidden { display: none; text-align: center; }
+
+
+.review-item {
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.review-q { font-weight: bold; margin-bottom: 5px; display: block; }
+.review-info { font-size: 0.9rem; }
+.text-success { color: #10b981; } /* Verde */
+.text-danger { color: #ef4444; }  /* Vermelho */
+#review-list { margin-top: 20px; max-height: 300px; overflow-y: auto; }
+
+
+/* Estilos das respostas */
+.correct {
+    background-color: #d1fae5 !important; /* Verde claro */
+    border-color: #10b981 !important;
+    color: #065f46;
+}
+
+.wrong {
+    background-color: #fee2e2 !important; /* Vermelho claro */
+    border-color: #ef4444 !important;
+    color: #991b1b;
+}
+
+.feedback-text {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+/* Desabilitar cliques após escolher uma opção */
+.disabled {
+    pointer-events: none;
+}
+
+.imgContainer, img {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Quando o botão é clicado */
+.selected {
+    background-color: #3b82f6 !important; /* Azul sólido */
+    color: white !important;
+    border-color: #2563eb !important;
+    transform: scale(0.98); /* Leve sensação de pressionado */
+    transition: all 0.4s ease; /* Transição suave da cor e tamanho */
+}
+
+/* Transição de fade para a troca de pergunta */
+#quiz-container {
+    transition: opacity 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Evitar múltiplos cliques durante o delay */
+.disabled {
+    pointer-events: none;
+}
