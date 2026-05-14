@@ -1,84 +1,59 @@
-const questions = [
-    {
-        q: "Qual nome do homem que Cristo chama para revelar sobre si e sobre as coisas vindouras?",
-        options:
-            ["João Batista", "Paulo", "João", "Tiago"],
-        answer: 2
-    },
-    {
-        q: "Onde ele estava preso quando Cristo revelou todas essas coisas a ele?",
-        options:
-            ["Társis", "Roma", "Jerusalém", "Ilha de Patmos"],
-        answer: 3
-    },
-    {
-        q: "O livro de apocalipse começa com uma promessa de bem-aventurança aos que",
-        options:
-            ["Crer, guardar e ouvir", "Lê, guardar e ouvir", "Comer, ouvir e crer", "Entender, meditar"],
-        answer: 1
-    },
-    {
-        q: "Na revelação a João, Cristo revela que ele é o Alfa e Ômega. O que isso significava?",
-        options: ["início e fim", "Aquele que ressuscitou", "Ele era a expressão de Deus", "Autoridade e justiça"],
-        answer: 0
-
-    },
-    {
-        q: "Na revelação a João, Cristo revela que é o primogênito dentre os mortos. O que isso significa?",
-        options:
-            ["Foi o primeiro a ressuscitar", "Foi o primeiro a vencer a morte", "Foi arrebatado vivo", "Não enfrentou a morte"],
-        answer: 1
-
-    },
-    {
-        q: "Jesus revela a João que em sua mão direita tinha 7 estrelas. O que isso significa?",
-        options: ["7 dias da criação", "7 voltas de Jericó", "7 trombetas", "7 igrejas do apocalipse"],
-        answer: 3
-
-    },
-    {
-        q: "Em qual cidade se iniciou um avivamento na Ásia menor?",
-        options:
-            ["Filadélfia", "Laodiceia", "Éfeso", "Pérgamo"],
-        answer: 2
-
-    },
-    {
-        q: "O que era uma província?",
-        options: ["Um território conquistado", "Uma cidade sem lei", "Uma terra sem dono", "Uma ilha isolada"],
-        answer: 0
-
-    },
-    {
-        q: "A antiga Asia menor, hoje está localiza em qual país na Ásia?",
-        options: ["Itália", "Turquia", "Israel", "Palestina"],
-        answer: 1
-    },
-    {
-        q: "Quais os aspectos que jesus sempre usava em suas cartas as igrejas?",
-        options: ["Entendimento/ Correção / Livre arbítrio", "Amor/ Fogo/ Glória", "Elogios/ Afeto/ Transformação", "Elogios/ Correção/ Recompensa"],
-        answer: 3
-
-    }
-];
-
-/*const questions = [
-    { q: "", options: ["", "", "", ""], answer: 1 },
-    { q: "", options: ["", "", "", ""], answer: 2 },
-    { q: "", options: ["", "", "", ""], answer: 1 },
-    { q: "", options: ["", "", "", ""], answer: 2 },  
-    { q: "", options: ["", "", "", ""], answer: 1 },   
-    { q: "", options: ["", "", "", ""], answer: 0 },    
-    { q: "", options: ["", "", "", ""], answer: 1 },
-    { q: "", options: ["", "", "", ""], answer: 0 },
-    { q: "", options: ["", "", "", ""], answer: 2 }, 
-    { q: "", options: ["", "", "", ""], answer: 2 }
-];*/
+import { questions } from "./data.js";
 
 let currentQuestion = 0;
 let score = 0;
 let answerSelected = "";
 let userAnswers = [];
+
+
+const resultMessages = {
+    excellent: [
+        "🧠 Seu cérebro entrou no modo turbo hoje. Resultado digno de mestre do quiz!",
+        "🚀 Você não respondeu… você simplesmente dominou o desafio!",
+        "👑 Isso aqui foi praticamente uma aula. Parabéns pelo desempenho incrível!",
+        "🔥 Você acertou tanto que o quiz ficou até com medo de você.",
+        "⚡ Precisão absurda! Parece que estudou com download direto no cérebro.",
+        "🏆 Resultado de campeão! Continue assim e ninguém te segura.",
+        "😎 Quando o conhecimento bate forte, o resultado aparece desse jeito.",
+        "🌟 Seu desempenho brilhou mais que pergunta fácil em prova.",
+        "💡 Você mostrou que estudar realmente faz diferença!",
+        "🎉 Excelente! Dá até vontade de aumentar a dificuldade."
+    ],
+
+    medium: [
+        "🙂 “Mandou bem! Com mais um pouco de estudo, você voa.",
+        "📖 “Você está no caminho certo. Falta pouco para dominar tudo!",
+        "🔧 “Bom resultado! Alguns ajustes e você chega no topo.",
+        "💪 “Nada mal! Seu conhecimento já está tomando forma.",
+        "🌱 “Você plantou bons resultados. Agora é hora de evoluir ainda mais.",
+        "🎯 “Foi um bom desempenho, mas ainda existem algumas pegadinhas te esperando.",
+        "🧩 “Você encaixou várias respostas certas, só faltou completar o quebra-cabeça.",
+        "🔥 “Tem potencial de sobra aí. Só precisa lapidar mais.",
+        "🚶 “Você já saiu do básico. Agora é continuar avançando.",
+        "😅 “Quase lá! O próximo quiz já vai te encontrar mais forte."
+    ],
+
+    bad: [
+        "📚 “O quiz venceu dessa vez… mas a revanche já pode começar.",
+        "😵 “Parece que algumas respostas fugiram de você hoje.",
+        "🫠 “Foi difícil… mas todo especialista já começou errando também.",
+        "☕ “Talvez esteja faltando um café e uma boa revisão.",
+        "🧐 “Hora de revisitar os estudos e voltar mais preparado.",
+        "🌧️ “Hoje o desempenho ficou meio nublado… mas dá para abrir o céu.",
+        "🪫 “Seu conhecimento está carregando… tente novamente daqui a pouco.",
+        "😬 “As perguntas pegaram pesado dessa vez.",
+        "🛠️ “Resultado abaixo do esperado, mas isso só mostra onde melhorar.",
+        "🔄 “Errar faz parte do aprendizado. Bora tentar outra vez!"
+    ]
+};
+
+function getRandomMessage(category) {
+    const messages = resultMessages[category];
+    const randomIndex = Math.floor(Math.random() * messages.length);
+
+    return messages[randomIndex];
+}
+
 
 function handleSelection(index, element) {
     const optionsContainer = document.getElementById("options-container");
@@ -95,7 +70,7 @@ function handleSelection(index, element) {
         score++;
     }
 
-    // 4. ESPERA 3 SEGUNDOS (O delay que você pediu)
+    // 4. ESPERA 3 SEGUNDOS 
     setTimeout(() => {
         const container = document.getElementById("quiz-container");
 
@@ -138,23 +113,6 @@ const loadQuestion = () => {
         btn.onclick = (e) => handleSelection(i, e.target);
         optionsContainer.appendChild(btn);
     });
-
-
-    // const totalQuestions = questions.length;
-
-    // document.getElementById("current-idx").innerText = currentQuestion + 1;
-    // document.getElementById("totalQuestions").innerText = totalQuestions;
-    // document.getElementById("question-text").innerText = qData.q;
-
-    // const container = document.getElementById("options-container");
-    // container.innerHTML = "";
-
-    // qData.options.forEach((opt, i) => {
-    //     const btn = document.createElement("button");
-    //     btn.innerText = opt;
-    //     btn.onclick = () => checkAnswer(i);
-    //     container.appendChild(btn);
-    // });
 }
 
 function checkAnswer(selected) {
@@ -175,27 +133,48 @@ function checkAnswer(selected) {
 
 function showResult() {
     document.getElementById("quiz-container").classList.add("hidden");
+
     const resDiv = document.getElementById("result-container");
     resDiv.classList.remove("hidden");
 
     const percent = (score / questions.length) * 100;
-    const title = document.getElementById("result-title");
 
-    // Lógica dos Confetes
+    const title = document.getElementById("result-title");
+    const scoreText = document.getElementById("result-score");
+
+    let randomMessage = "";
+
+    // RESULTADO + CONFETES
     if (percent >= 80) {
-        title.innerText = "Parabéns! Você foi incrível!";
-        confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
+        randomMessage = getRandomMessage("excellent");
+
+        confetti({
+            particleCount: 150,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+
     } else if (percent >= 50) {
-        title.innerText = "Bom trabalho!";
-        confetti({ particleCount: 50, spread: 50, origin: { y: 0.6 } });
+        randomMessage = getRandomMessage("medium");
+
+        confetti({
+            particleCount: 50,
+            spread: 50,
+            origin: { y: 0.6 }
+        });
+
     } else {
-        title.innerText = "Poxa, não foi dessa vez.";
+        randomMessage = getRandomMessage("bad");
     }
 
-    document.getElementById("result-score").innerText = `Você acertou ${score} de ${questions.length}`;
+    title.innerText = randomMessage;
 
-    // GERAR REVISÃO NO FINAL
+    scoreText.innerText =
+        `Você acertou ${score} de ${questions.length} (${Math.round(percent)}%)`;
+
+    // GERAR REVISÃO FINAL
     const reviewList = document.getElementById("review-list");
+
     reviewList.innerHTML = "<h3>Revisão:</h3>";
 
     questions.forEach((item, index) => {
@@ -203,16 +182,32 @@ function showResult() {
         const isCorrect = userChoice === item.answer;
 
         const div = document.createElement("div");
+
         div.className = "review-item";
+
         div.innerHTML = `
-            <span class="review-q">${index + 1}. ${item.q}</span>
+            <span class="review-q">
+                ${index + 1}. ${item.q}
+            </span>
+
             <div class="review-info">
-                Sua resposta: <span class="${isCorrect ? 'text-success' : 'text-danger'}">
+                Sua resposta:
+                <span class="${isCorrect ? 'text-success' : 'text-danger'}">
                     ${item.options[userChoice]} ${isCorrect ? '✓' : '✗'}
-                </span><br>
-                ${!isCorrect ? `Correta: <span class="text-success">${item.options[item.answer]}</span>` : ''}
+                </span>
+
+                <br>
+
+                ${!isCorrect
+                ? `Correta:
+                        <span class="text-success">
+                            ${item.options[item.answer]}
+                        </span>`
+                : ''
+            }
             </div>
         `;
+
         reviewList.appendChild(div);
     });
 }
