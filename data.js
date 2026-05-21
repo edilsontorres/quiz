@@ -52,7 +52,7 @@ export const questions = [
 
     },
     {
-        q: "Em Isaías as característica ou atributos dos sete espíritos de Deus descrita em Isaías 11?",
+        q: "Quais as características ou atributos dos sete espíritos de Deus descrita em Isaías 11?",
         options: [
             "Benignidade -Amor-mansidao- fortaleza -conselho-tremor-amor",
             "sabedoria-Entendimento- conselho - Fortaleza - conhecimento - temor- tremor",
