@@ -1,111 +1,108 @@
 export const questions = [
     {
-        q: "Quais são as sete igrejas da Ásia menor , que receberam as cartas de João?",
-        options:
-            [
-                "Éfeso- Esmirna- Pérgamo- Sardes- Laodicéia - Colossos- Filadélfia.",
-                "Éfeso- Esmirna- Filadélfia - Sardes- Pérgamo - Laodicéia -Tiatira.",
-                "Éfeso - Sardes- Esmirna- Filadélfia - Pérgamo - Romanos- Laodicéia.",
-                "Laodicéia - Esmirna- Tiatira- Atos- Sardes- Filadélfia - Laodicéia."
-            ],
-        answer: 1
+        q: "Depois de ser tomado pelo espírito qual foi a primeira coisa que João viu?",
+        options: [
+            "Arco-íris",
+            "Mar de vidro",
+            "Sete tochas ou lâmpadas",
+            "Um trono"
+        ],
+        answer: 3
     },
     {
-        q: "Qual a sequência correta das escritas?",
-        options:
-            [
-                "Éfeso- Esmirna- Filadélfia - Sardes - Pérgamo - Laodicéia - Tiatira",
-                "Esmirna -Efeso- Pergamo- Tiatira- Filadélfia - Sardes- Laodicéia",
-                "Éfeso- Esmirna- Pérgamo - Tiatira- Sardes- Filadélfia - Laodicéia",
-                "Ilha de Éfeso- Esmirna- Tiatira- Pérgamo- sardes- Filadélfia- Laodicéia"
-            ],
+        q: "João disse que quem estava assentado no trono tinha a semelhança ao que ?",
+        options: [
+            "12 tribos de Israel",
+            "jaspe e ouro",
+            "jaspe e sardônio",
+            "Jaspe e Cristal"
+        ],
         answer: 2
     },
     {
-        q: "Qual é a correção a igreja de Éfeso?",
-        options:
-            [
-                "Se apegam ao ensino de balaão ",
-                "Tolera Jezabel",
-                "Vive de aparência",
-                "Deixou o primeiro amor"
-            ],
-        answer: 3
-    },
-    {
-        q: "Quais elogios da igreja de Esmirna?",
+        q: "Qual era um dos significados do arco íris em volta do trono ?",
         options: [
-            "Trabalham arduamente",
-            "Fazendo mais agora que no princípio",
-            "Ainda existe poucos que não se contaminaram",
-            "Sua riqueza em meio a tribulações e pobreza"
-        ],
-        answer: 3
-
-    },
-    {
-        q: "A quais igrejas não houve correções diretas?",
-        options: [
-            "Esmirna e Tiatira",
-            "Esmirna e sardes",
-            "Éfeso e Laodicéia",
-            "Esmirna e Filadélfia"
-        ],
-        answer: 3
-
-    },
-    {
-        q: "A quais igrejas não houve elogios?",
-        options: [
-            "Sardes e Laodicéia",
-            "Esmirna e Éfeso",
-            "Laodicéia e Filadélfia",
-            "Pérgamo e Filadélfia "
-        ],
-        answer: 0
-
-    },
-    {
-        q: "Qual igreja não era quente e nem fria ?",
-        options: [
-            "Laodicéia",
-            "Filadélfia",
-            "Pérgamo",
-            "Esmirna"
-        ],
-        answer: 0
-
-    },
-    {
-        q: "Quais eram as duas cidades vizinhas de Laodicéia que suas águas banhavam a cidade?",
-        options: [
-            "Éfeso e Tiatira",
-            "Colosso e Pérgamo",
-            "Hierapolis e Colossos",
-            "Colossos e Éfeso "
-        ],
-        answer: 2
-
-    },
-    {
-        q: "A qual igreja Cristo disse como recompensa \"Eis que estou a porta e bato, se alguém ouvir minha voz, entrarei e cearei com ele e ele comigo\"",
-        options: [
-            "Laodicéia",
-            "Filadélfia",
-            "Pérgamo",
-            "Éfeso"
-        ],
-        answer: 0
-    },
-    {
-        q: "O que era os nicolaítas?",
-        options: [
-            "Um exército de Israel",
-            "Um grupo de pessoas que tentavam introduzir a adoração a ídolos e prática sexual nas igrejas",
-            "Romanos que invadiram a Ásia menor",
-            "Descendentes de Jezabel"
+            "Amor  de Deus",
+            "Aliança eterna de Deus",
+            "Esperança na vindo de Cristo ",
+            "Deus em movimento "
         ],
         answer: 1
+    },
+    {
+        q: "Ao redor do trono havia quantos anciões?",
+        options: [
+            "7",
+            "3",
+            "21",
+            "24"
+        ],
+        answer: 3
+
+    },
+    {
+        q: "Qual a afirmação correta sobre 7 espíritos de Deus?",
+        options: [
+            "É um espírito em uma totalidade da plenitude de Deus",
+            "São sete espíritos diferentes cada um com seu propósito",
+            "É um espirito desvinculado de Deus",
+            "São sete espíritos na totalidade da plenitude de Deus"
+        ],
+        answer: 0
+
+    },
+    {
+        q: "Em Isaías as característica ou atributos dos sete espíritos de Deus descrita em Isaías 11?",
+        options: [
+            "Benignidade -Amor-mansidao- fortaleza -conselho-tremor-amor",
+            "sabedoria-Entendimento- conselho - Fortaleza - conhecimento - temor- tremor",
+            "sabedoria - entendimento -paz- temor- refrigerio- conselho- Misericórdia",
+            "Entendimento - Misericórdia - conhecimento - temor- tremor- Fogo- conselho"
+        ],
+        answer: 1
+
+    },
+    {
+        q: "Quais eram os quatro seres viventes na visão de João?",
+        options: [
+            "Leao- urso-Homem-aguia",
+            "Leao-Jumenta-bezerro- Águia",
+            "Leao-peixe- bezerro- Homem",
+            "Leão -bezerro- homem - Águia"
+        ],
+        answer: 3
+
+    },
+    {
+        q: "Qual era o atributo de Deus vinculado ao Leão?",
+        options: [
+            "sabedoria",
+            "soberania e visão",
+            "sacrifício e serviço",
+            "realeza e poder"
+        ],
+        answer: 3
+
+    },
+    {
+        q: "Qual era o atributo de Deus vinculado ao bezerro (boi)?",
+        options: [
+            "Soberania e visão",
+            "sacrifício e serviço",
+            "sabedoria",
+            "realeza e poder"
+        ],
+        answer: 1
+    },
+    {
+        q: "Qual era o movimento dos 24 anciãos na adoração a Deus?",
+        options: [
+            "se lançavam aos pés do Senhor",
+            "rasgavam suas vestes",
+            "pulavam e dançavam",
+            "prestavam-se e lançavam suas coroas"
+        ],
+        answer: 3
 
     }
 ];
@@ -218,5 +215,8 @@ export const questions = [
 
 //     }
 // ];
+
+
+
 
 
