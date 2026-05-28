@@ -59,7 +59,7 @@ export const questions = [
             "A terra treme",
             "os anjos cantam um cântico "
         ],
-        answer: 2
+        answer: 1
 
     },
     {
@@ -81,7 +81,7 @@ export const questions = [
             "Os quatro seres viventes",
             "Os anciãos e os quatro seres viventes"
         ],
-        answer: 4
+        answer: 3
 
     },
     {
