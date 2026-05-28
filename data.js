@@ -1,111 +1,112 @@
 export const questions = [
     {
-        q: "Depois de ser tomado pelo espírito qual foi a primeira coisa que João viu?",
+        q: "O que João vê na mão direita de Deus?",
         options: [
-            "Arco-íris",
-            "Mar de vidro",
-            "Sete tochas ou lâmpadas",
-            "Um trono"
-        ],
-        answer: 3
-    },
-    {
-        q: "João disse que quem estava assentado no trono tinha a semelhança ao que ?",
-        options: [
-            "12 tribos de Israel",
-            "jaspe e ouro",
-            "jaspe e sardônio",
-            "Jaspe e Cristal"
-        ],
-        answer: 2
-    },
-    {
-        q: "Qual era um dos significados do arco íris em volta do trono ?",
-        options: [
-            "Amor  de Deus",
-            "Aliança eterna de Deus",
-            "Esperança na vindo de Cristo ",
-            "Deus em movimento "
+            "Um trono de ouro",
+            "Um livro selado com sete selos",
+            "Um arco e uma coroa",
+            "Um candelabro de ouro"
         ],
         answer: 1
     },
     {
-        q: "Ao redor do trono havia quantos anciões?",
+        q: "Quem clama em alta voz para saber quem é digno de abrir o livro?",
         options: [
-            "7",
-            "3",
-            "21",
-            "24"
+            "Os anciãos",
+            "Um anjo forte",
+            "João",
+            "Os quatro seres viventes"
         ],
-        answer: 3
-
+        answer: 1
     },
     {
-        q: "Qual a afirmação correta sobre 7 espíritos de Deus?",
+        q: "Por que João chora?",
         options: [
-            "É um espírito em uma totalidade da plenitude de Deus",
-            "São sete espíritos diferentes cada um com seu propósito",
-            "É um espirito desvinculado de Deus",
-            "São sete espíritos na totalidade da plenitude de Deus"
+            "Porque o livro estava vazio",
+            "Porque ninguém foi digno de abrir o livro",
+            "Porque o trono estava vazio",
+            "Porque os anjos não cantavam"
+        ],
+        answer: 1
+    },
+    {
+        q: "Quem é anunciado como digno de abrir o livro?",
+        options: [
+            "O Leão da tribo de Judá",
+            "O Anjo do Senhor",
+            "Moisés",
+            "O Arcanjo Miguel"
         ],
         answer: 0
 
     },
     {
-        q: "Quais as características ou atributos dos sete espíritos de Deus descrita em Isaías 11?",
+        q: "Como o Cordeiro é descrito na visão?",
         options: [
-            "Benignidade -Amor-mansidao- fortaleza -conselho-tremor-amor",
-            "sabedoria-Entendimento- conselho - Fortaleza - conhecimento - temor- tremor",
-            "sabedoria - entendimento -paz- temor- refrigerio- conselho- Misericórdia",
-            "Entendimento - Misericórdia - conhecimento - temor- tremor- Fogo- conselho"
+            "Como um rei com uma espada",
+            "Como tendo sido morto, mas de pé, com sete chifres e sete olhos",
+            "Como um leão com asas",
+            "Como um ancião com coroa"
         ],
         answer: 1
 
     },
     {
-        q: "Quais eram os quatro seres viventes na visão de João?",
+        q: "O que acontece quando o Cordeiro toma o livro?",
         options: [
-            "Leao- urso-Homem-aguia",
-            "Leao-Jumenta-bezerro- Águia",
-            "Leao-peixe- bezerro- Homem",
-            "Leão -bezerro- homem - Águia"
+            "Os anciãos começam a cantar um novo cântico",
+            "Os quatro seres viventes e anciãos se prostram e adoram o Cordeiro",
+            "A terra treme",
+            "os anjos cantam um cântico "
         ],
-        answer: 3
+        answer: 2
 
     },
     {
-        q: "Qual era o atributo de Deus vinculado ao Leão?",
+        q: "O que simboliza o cântico novo?",
         options: [
-            "sabedoria",
-            "soberania e visão",
-            "sacrifício e serviço",
-            "realeza e poder"
+            "A criação de um novo céu",
+            "A redenção dos povos comprados pelo sangue",
+            "A volta de Cristo",
+            "A vitória dos anjos"
         ],
-        answer: 3
+        answer: 1
 
     },
     {
-        q: "Qual era o atributo de Deus vinculado ao bezerro (boi)?",
+        q: "Quem canta esse cântico novo?",
         options: [
-            "Soberania e visão",
-            "sacrifício e serviço",
-            "sabedoria",
-            "realeza e poder"
+            "Os anjos apenas",
+            "Os 24 anciãos",
+            "Os quatro seres viventes",
+            "Os anciãos e os quatro seres viventes"
+        ],
+        answer: 4
+
+    },
+    {
+        q: "O que o Cordeiro faz com o livro?",
+        options: [
+            "Ele o guarda no trono",
+            "Ele abre os selos",
+            "Ele entrega aos anjos",
+            "Ele o queima"
         ],
         answer: 1
     },
     {
-        q: "Qual era o movimento dos 24 anciãos na adoração a Deus?",
+        q: "Qual é o efeito da adoração universal?",
         options: [
-            "se lançavam aos pés do Senhor",
-            "rasgavam suas vestes",
-            "pulavam e dançavam",
-            "prestavam-se e lançavam suas coroas"
+            "A terra se enche de luz",
+            "Todos os seres louvam a Deus e ao Cordeiro, para todo sempre",
+            "O céu se fecha",
+            "Os anciãos são exaltados"
         ],
-        answer: 3
+        answer: 1
 
     }
 ];
+
 
 // export const questions = [
 //     {
@@ -215,6 +216,12 @@ export const questions = [
 
 //     }
 // ];
+
+
+
+
+
+
 
 
 
