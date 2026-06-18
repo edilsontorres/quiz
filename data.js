@@ -77,13 +77,13 @@ export const questions = [
             "Elias e Davi",
             "Elias e Eliseu"
         ],
-        answer: 0
+        answer: [0, 1]
     },
     {
         q: "Quantos dias as duas testemunhas profetizarão na terra?",
         options: [
             "1160",
-            "1260",
+            "1860",
             "1560",
             "1260"
         ],

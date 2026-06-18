@@ -1,6 +1,6 @@
 import { questions } from "./data.js";
 import { resultMessages } from "./resultMessages.js";
- 
+
 let currentQuestion = 0;
 let score = 0;
 let answerSelected = "";
@@ -22,7 +22,7 @@ function tocarSomAleatorio(listaDeSons) {
     // Escolhe um índice aleatório da lista passada
     const indiceAleatorio = Math.floor(Math.random() * listaDeSons.length);
     const caminhoDoSom = listaDeSons[indiceAleatorio];
-    
+
     // Cria o elemento de áudio e toca
     const audio = new Audio(caminhoDoSom);
     audio.play().catch(error => {
@@ -40,9 +40,15 @@ function handleSelection(index, element) {
     // 2. Aplica a cor de "selecionado" com o degradê suave do CSS
     element.classList.add("selected");
 
-    // 3. Salva a resposta e pontuação
     userAnswers.push(index);
-    if (index === questions[currentQuestion].answer) {
+
+    const answer = questions[currentQuestion].answer;
+
+    const isCorrect =
+        (Array.isArray(answer) && answer.includes(index)) ||
+        (!Array.isArray(answer) && index === answer);
+
+    if (isCorrect) {
         score++;
     }
 
@@ -89,22 +95,6 @@ const loadQuestion = () => {
         btn.onclick = (e) => handleSelection(i, e.target);
         optionsContainer.appendChild(btn);
     });
-}
-
-function checkAnswer(selected) {
-    // Salva a resposta do usuário
-    userAnswers.push(selected);
-
-    if (selected === questions[currentQuestion].answer) {
-        score++;
-    }
-
-    currentQuestion++;
-    if (currentQuestion < questions.length) {
-        loadQuestion();
-    } else {
-        showResult();
-    }
 }
 
 function showResult() {
@@ -158,7 +148,10 @@ function showResult() {
 
     questions.forEach((item, index) => {
         const userChoice = userAnswers[index];
-        const isCorrect = userChoice === item.answer;
+        const isCorrect =
+            (Array.isArray(item.answer) && item.answer.includes(userChoice)) ||
+            (!Array.isArray(item.answer) && userChoice === item.answer);
+
 
         const div = document.createElement("div");
 
@@ -176,14 +169,18 @@ function showResult() {
                 </span>
 
                 <br>
-
                 ${!isCorrect
                 ? `Correta:
-                        <span class="text-success">
-                            ${item.options[item.answer]}
-                        </span>`
+                    <span class="text-success">
+                        ${Array.isArray(item.answer)
+                                ? item.answer.map(i => item.options[i]).join(" ou ")
+                                : item.options[item.answer]
+                            }
+                    </span>`
                 : ''
             }
+
+            
             </div>
         `;
 
