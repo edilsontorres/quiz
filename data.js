@@ -1,103 +1,103 @@
 export const questions = [
     {
-        q: "Quantas trombetas serão tocadas em Apocalipse?",
+        q: "Quem é o dragão de Apocalipse 12?",
         options: [
-            "6",
-            "7",
-            "12",
-            "3"
+            "Miguel",
+            "Satanás",
+            "Um rei da Pérsia",
+            "Um anjo"
         ],
         answer: 1
     },
     {
-        q: "Ao som de qual trombeta cairá uma chuva de pedra misturada com sangue, matando terça parte das árvores e vegetações?",
+        q: "Quem é o filho varão da mulher?",
         options: [
-            "1° trombeta",
-            "2° trombeta",
-            "3° trombeta",
-            "4° trombeta"
+            "João Batista",
+            "Moisés",
+            "Jesus Cristo",
+            "Elias"
+        ],
+        answer: 2
+    },
+    {
+        q: "Quem lutou contra o dragão no céu?",
+        options: [
+            "Miguel e seus anjos",
+            "Gabriel e seus anjos",
+            "Os 24 anciãos",
+            "Os 144 mil"
         ],
         answer: 0
     },
     {
-        q: "Ao som de qual trombeta estrelas caem queimando sobre as águas, as deixando amargas e muitos morrerem ao beber dessas águas?",
+        q: "Para onde a mulher fugiu?",
         options: [
-            "1° trombeta",
-            "2° trombeta",
-            "3° trombeta",
-            "5° trombeta"
-        ],
-        answer: 2
-    },
-    {
-        q: "Ao som da 4° trombeta, o que foi ferido?",
-        options: [
-            "Um terço das árvores e vegetais",
-            "Um terço dos animais",
-            "Um terço do sol, da lua e das estrelas",
-            "Um terço das águas e da terra"
-        ],
-        answer: 2
-    },
-    {
-        q: "O que saía do buraco do abismo da quinta trombeta?",
-        options: [
-            "Escorpiões",
-            "Cavalos",
-            "Leões",
-            "Gafanhotos"
+            "Jerusalém",
+            "Egito",
+            "Babilônia",
+            "O deserto"
         ],
         answer: 3
     },
     {
-        q: "Com o que eram parecidos os dentes desses gafanhotos?",
+        q: "Quanto tempo a mulher foi sustentada por Deus?",
         options: [
-            "Com dentes de lobo",
-            "Com dentes de leão",
-            "Com dentes de onça",
-            "Com dentes de cachorro"
+            "40 dias",
+            "1.260 dias",
+            "7 anos",
+            "70 semanas"
         ],
         answer: 1
     },
     {
-        q: "Por que o anjo pede para João comer o livro?",
+        q: "De onde surgiu a primeira besta?",
         options: [
-            "Para não esquecer as escrituras",
-            "Para cumprir o que foi escrito: guardar os mandamentos",
-            "Para entender o peso, o juízo e o sofrimento que a mensagem traz aos que a têm em seu ventre",
-            "Para esconder do inimigo"
+            "Do mar",
+            "Do céu",
+            "Do deserto",
+            "Do rio Eufrates"
+        ],
+        answer: 0
+    },
+    {
+        q: "De onde surgiu a segunda besta?",
+        options: [
+            "Do mar",
+            "Da terra",
+            "Do céu",
+            "Do abismo"
+        ],
+        answer: 1
+    },
+    {
+        q: "O que a segunda besta fazia?",
+        options: [
+            "Pregava o Evangelho",
+            "Protegia os santos",
+            "Levava as pessoas a adorarem a primeira besta",
+            "Construía o templo"
         ],
         answer: 2
     },
     {
-        q: "Quem possivelmente eram as duas testemunhas?",
+        q: "Onde será colocada a marca da besta?",
         options: [
-            "Elias e Enoque",
-            "Elias e Moisés",
-            "Elias e Davi",
-            "Elias e Eliseu"
-        ],
-        answer: [0, 1]
-    },
-    {
-        q: "Quantos dias as duas testemunhas profetizarão na terra?",
-        options: [
-            "1160",
-            "1860",
-            "1560",
-            "1260"
+            "No braço esquerdo",
+            "No peito",
+            "No pescoço",
+            "Na mão direita ou na testa"
         ],
         answer: 3
     },
     {
-        q: "O que acontece com os moradores da terra quando as duas testemunhas morrem?",
+        q: "Quem dá poder à primeira besta?",
         options: [
-            "Festejam e trocam presentes",
-            "Sentimento de tristeza e dor",
-            "Realizam uma cerimônia oficial com honras de estado",
-            "Ficam em silêncio"
+            "Miguel",
+            "Gabriel",
+            "Deus",
+            "O dragão (Satanás)"
         ],
-        answer: 0
+        answer: 3
     }
 ];
 
