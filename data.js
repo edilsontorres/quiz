@@ -1,103 +1,103 @@
 export const questions = [
     {
-        q: "Quem é o dragão de Apocalipse 12?",
+        q: "O que João viu no céu em Apocalipse 14?",
         options: [
-            "Miguel",
-            "Satanás",
-            "Um rei da Pérsia",
-            "Um anjo"
+            "Os sete anjos com as taças",
+            "Os 144 mil",
+            "A besta saindo do mar",
+            "O trono de Deus"
         ],
         answer: 1
     },
     {
-        q: "Quem é o filho varão da mulher?",
+        q: "Qual é o cântico que os vencedores cantam no mar de vidro?",
         options: [
-            "João Batista",
-            "Moisés",
-            "Jesus Cristo",
-            "Elias"
+            "O cântico de Davi",
+            "O cântico dos anjos",
+            "O cântico de Moisés e do Cordeiro",
+            "O cântico de Isaías"
         ],
         answer: 2
     },
     {
-        q: "Quem lutou contra o dragão no céu?",
+        q: "O que os sete anjos recebem no capítulo 15?",
         options: [
-            "Miguel e seus anjos",
-            "Gabriel e seus anjos",
-            "Os 24 anciãos",
-            "Os 144 mil"
+            "Sete taças da ira de Deus",
+            "Sete selos",
+            "Sete trombetas",
+            "Sete estrelas"
         ],
         answer: 0
     },
     {
-        q: "Para onde a mulher fugiu?",
+        q: "O que as taças da ira contêm?",
         options: [
-            "Jerusalém",
-            "Egito",
-            "Babilônia",
-            "O deserto"
-        ],
-        answer: 3
-    },
-    {
-        q: "Quanto tempo a mulher foi sustentada por Deus?",
-        options: [
-            "40 dias",
-            "1.260 dias",
-            "7 anos",
-            "70 semanas"
+            "Ações dos anjos",
+            "As últimas pragas",
+            "O fogo do Espírito",
+            "Os juízos da besta"
         ],
         answer: 1
     },
     {
-        q: "De onde surgiu a primeira besta?",
+        q: "Quem será afetado pelas taças da ira?",
         options: [
-            "Do mar",
-            "Do céu",
-            "Do deserto",
-            "Do rio Eufrates"
-        ],
-        answer: 0
-    },
-    {
-        q: "De onde surgiu a segunda besta?",
-        options: [
-            "Do mar",
-            "Da terra",
-            "Do céu",
-            "Do abismo"
-        ],
-        answer: 1
-    },
-    {
-        q: "O que a segunda besta fazia?",
-        options: [
-            "Pregava o Evangelho",
-            "Protegia os santos",
-            "Levava as pessoas a adorarem a primeira besta",
-            "Construía o templo"
+            "Apenas os judeus",
+            "Apenas os apóstolos",
+            "Os ímpios e adoradores da besta",
+            "Os anjos caídos"
         ],
         answer: 2
     },
     {
-        q: "Onde será colocada a marca da besta?",
+        q: "Como os ímpios reagem ao vinho da ira de Deus?",
         options: [
-            "No braço esquerdo",
-            "No peito",
-            "No pescoço",
-            "Na mão direita ou na testa"
+            "Eles se arrependem",
+            "Eles blasfemam contra Deus",
+            "Eles fogem para o deserto",
+            "Eles adoram os profetas"
+        ],
+        answer: 1
+    },
+    {
+        q: "O que aconteceu quando o primeiro anjo derramou sua taça sobre a terra?",
+        options: [
+            "A água virou sangue",
+            "O reino ficou em escuridão",
+            "Feridas dolorosas nos que tinham a marca da besta",
+            "Relâmpagos e trovões"
+        ],
+        answer: 2
+    },
+    {
+        q: "Onde o segundo anjo derramou sua taça?",
+        options: [
+            "No sol",
+            "No ar",
+            "Na terra",
+            "No mar"
         ],
         answer: 3
     },
     {
-        q: "Quem dá poder à primeira besta?",
+        q: "Onde o quarto anjo derramou sua taça?",
         options: [
-            "Miguel",
-            "Gabriel",
-            "Deus",
-            "O dragão (Satanás)"
+            "No sol",
+            "Na terra",
+            "No mar",
+            "Nas fontes das águas"
         ],
-        answer: 3
+        answer: 0
+    },
+    {
+        q: "Qual anjo derramou sua taça sobre o rio Eufrates?",
+        options: [
+            "Terceiro",
+            "Sexto",
+            "Quinto",
+            "Primeiro"
+        ],
+        answer: 1
     }
 ];
 
